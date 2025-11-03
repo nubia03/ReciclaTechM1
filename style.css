@@ -16,4 +16,8 @@ header h1 {
 }
 header nav {
   background-color: aqua;
+  height: 10vh;
+  width: 40%;
+  display: flex;
+  align-content: end ju;
 }/*# sourceMappingURL=style.css.map */

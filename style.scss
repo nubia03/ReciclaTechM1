@@ -15,6 +15,11 @@ header {
     }
     nav {
         background-color: aqua;
+        height: 10vh;
+        width: 40%;
+        display: flex;
+        align-content: end
+        justify-content: space-between;
     }
 }// space-around  O espaço vazio antes do primeiro e depois do último item é igual a metade do espaço entre cada par de itens adjacentes.
 
