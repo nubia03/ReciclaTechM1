@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
@@ -11,13 +12,166 @@ header {
   border: solid green 5px;
   height: 10vh;
 }
-header h1 {
-  background-color: red;
-}
 header nav {
-  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
   height: 10vh;
+}
+header nav a {
+  color: #4B5563;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btnVerde {
+  background-color: #21C05C;
+  padding: 20px;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.caixaLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+.caixaLogo h1 {
+  color: #1f2937;
+  font-size: 2.5rem;
+}
+
+.primeiraSection {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+}
+.primeiraSection section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.primeiraSection section h2 {
+  font-size: 3.75rem;
+  width: 60%;
+}
+.primeiraSection section p {
+  font-size: 1.25rem;
+  width: 65%;
+}
+
+.boxBtnsPrimeiraSection {
   width: 40%;
   display: flex;
-  align-content: end ju;
+  justify-content: space-between;
+}
+.boxBtnsPrimeiraSection button {
+  padding: 30px 40px;
+  cursor: pointer;
+}
+
+.dadosNumericos {
+  background-color: #f3f5f8;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dadosNumericos div {
+  border: solid #red;
+  height: 15vh;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.dadosNumericos h2 {
+  color: #21C05C;
+  font-size: 2.5rem;
+}
+
+.produtosDisponiveis {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+.produtosDisponiveis article {
+  border: solid #16a34a;
+  width: 18%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.produtosDisponiveis article img {
+  width: 100%;
+}
+.produtosDisponiveis article p {
+  text-align: center;
+  border: solid;
+  width: 90%;
+}
+.produtosDisponiveis article button {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 18vh;
+    flex-direction: column;
+  }
+  header nav {
+    width: 90%;
+  }
+  header nav a {
+    font-size: 0.8rem;
+  }
+  .caixaLogo {
+    width: 50%;
+  }
+  .caixaLogo h1 {
+    font-size: 2rem;
+  }
+  .primeiraSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .primeiraSection img {
+    width: 50vw;
+  }
+  .primeiraSection section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+  }
+  .primeiraSection section h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .primeiraSection section p {
+    width: 100%;
+    text-align: center;
+  }
+  .boxBtnsPrimeiraSection {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .boxBtnsPrimeiraSection button {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .produtosDisponiveis {
+    flex-direction: column;
+  }
+  .produtosDisponiveis article {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
